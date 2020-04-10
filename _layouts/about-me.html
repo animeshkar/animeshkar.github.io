@@ -37,12 +37,9 @@ layout: default
                 </a>
                 {% endif %}
             </p>
-
-            <h6> <i class="fas fa-map-marker-alt"></i>India</h6>
-            <h6> <i class="fas fa-envelope"></i>karsumit94[at]live[dot]com</h6>
-            <h6> <i class="fas fa-link"></i>sumitkar.in</h6>
-
-
+            <h6> <i class="fas fa-map-marker-alt"></i> India</h6>
+            <h6> <i class="fas fa-envelope"></i> karsumit94[at]live[dot]com</h6>
+            <h6> <i class="fas fa-link"></i> www.sumitkar.in</h6>
         </div>
         <div class="card">
             <h1 class="card-title">About</h1>
@@ -70,6 +67,16 @@ layout: default
                 that make a
                 difference!</p>
 
+        </div>
+        <div class="card desktop-only">
+            <h1 class="card-title">Recent Posts</h1>
+            <ul>
+                {% for post in site.posts limit:5 %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
     <div class="col-lg-7">
