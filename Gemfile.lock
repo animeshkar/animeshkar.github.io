@@ -12,13 +12,6 @@ GEM
     backports (3.16.1)
     colorator (1.1.0)
     concurrent-ruby (1.1.5)
-    devlopr (0.4.5)
-      jekyll (>= 3.5, < 5.0)
-      jekyll-feed (~> 0.13.0)
-      jekyll-gist (~> 1.5.0)
-      jekyll-paginate (~> 1.1.0)
-      jekyll-seo-tag (~> 2.6.1)
-      jekyll-sitemap (~> 1.4.0)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -158,7 +151,6 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  devlopr (~> 0.4.5)
   jekyll (~> 4.0.0)
   jekyll-admin (~> 0.9.0)
   jekyll-algolia (~> 1.6)
