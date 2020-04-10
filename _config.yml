@@ -132,6 +132,7 @@ defaults:
 # Build settings
 
 # theme: timus
+
 plugins:
   - jekyll-feed
   - jekyll-paginate
