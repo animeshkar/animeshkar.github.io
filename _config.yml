@@ -16,14 +16,10 @@ urls:
     - text: Contact Me
       url : /contact
 
-# Edit these details
-
 author_logo: profile.png
 author: Sumit Kar
 author_bio: Hello, My Name is Sumit Kar. I love to Code and Design. 
-author_email: "karsumit94[at]live[dot]com"
-author_location: India
-author_website_url: "https://www.sumitkar.in"
+
 
 author_work_experiences:
             - company_name: Cisco Systems (India) Pvt. Ltd.
@@ -52,19 +48,20 @@ author_work_experiences:
               visibility: true
 
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
+              - college_logo: svist.png
+                college_name: Swami Vivekananda Institute of Science and Technology
+                college_url: https://svist.org
+                college_degree: Computer Science Engineer
+                description: Bachelor of Technology
+                visibility: true
+              - college_logo: akgms.png
+                college_name: A. K. Ghosh Memorial School
+                college_url: http://akgms.edu.in
+                college_degree: Computer Science Engineer
                 description: Bachelor of Technology
                 visibility: true
 
-author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
-                visibility: true
+
 
 # social links
 twitter_username: TimusRak
