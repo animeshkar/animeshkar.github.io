@@ -46,14 +46,30 @@ layout: default
         </div>
         <div class="card">
             <h1 class="card-title">About</h1>
-            <p>
-                Computer engineer fascinated by the web, specially by the front-end development. Has a deep knowledge of
-                the several web layers and the interaction between all of them. Capable of shipping creative and optimal
-                solutions according to the requirements. Firm believer in Clean Code and Agile methodologies.
+            <p>Hello, my name is Sumit Kar. I am a Computer engineer fascinated by the web and IoT based technologies. I
+                have deep
+                knowledge of the several web layers and the interaction between all of them. Capable of shipping
+                creative and
+                optimal solutions according to the requirements. I am a firm believer in Clean Code and Agile
+                methodologies.
+            </p>
+            <p>Other than coding I like, Graphic Designing, Photography and Communicating with people. I spend my day
+                reading
+                Technology Magazine and play around with new Apps and Gadgets. I also love to capture images from day to
+                day life
+                and try to render them immortal. I love to Promote Kolkata, Bengal and the rich Bengali culture to the
+                entire world.
             </p>
             <p>
-                My career began in Kolkata building website using Drupal based Conetent Management Systems.
-            </p>
+                My career began in Kolkata when I joined Novatree as an Intern Software developer. Then I got an
+                opportunity to work
+                with Broadsoft, and I moved to Chennai. Later the company got acquired by Cisco where I am presently
+                working. </p>
+            <p>
+                I like playing with Programming Codes. I am always learning from things around me. I want to make things
+                that make a
+                difference!</p>
+
         </div>
     </div>
     <div class="col-lg-7">
@@ -62,16 +78,11 @@ layout: default
             <br />
             {%- include author_skills.html -%}
         </div>
-
-
         <div class="card">
             <h1 class="card-title"> Work Experience</h1>
             <br />
             {%- include author_experience.html -%}
         </div>
-
-
-
         {% if site.show_author_education_details == true %}
         <div class="card">
             <h1 class="card-title"> Education </h1>
@@ -79,16 +90,18 @@ layout: default
             {% for detail in site.author_education_details %}
             {% if detail.visibility == true %}
             <div class="row">
+                {% if detail.college_logo %}
                 <div class="col-md-2">
                     <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ detail.college_logo}}" class="company-logo" />
                 </div>
+                {% endif %}
                 <div class="col-md-6">
                     <h4 class="experience-title"> {{detail.college_degree }}</h4>
-                    <h6 class="experience-info">{{detail.college_name}}</h6>
                     <p class="experience-desc"> {{detail.description}} </p>
-                    <p><a href="{{detail.college_url}}">{{ detail.college_url}}</a></p>
+                    <p><a href="{{detail.college_url}}">{{ detail.college_name}}</a></p>
                 </div>
             </div>
+            <hr>
             {% endif %}
 
             {% endfor %}
