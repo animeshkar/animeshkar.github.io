@@ -16,24 +16,12 @@ urls:
     - text: Contact Me
       url : /contact
 
-author_logo: profile.png
+author_logo: sumit-kar.jpeg
 author: Sumit Kar
 author_bio: Hello, My Name is Sumit Kar. I love to Code and Design. 
 
 
 author_work_experiences:
-            - company_name: Cisco Systems (India) Pvt. Ltd.
-              company_logo: cisco.png
-              company_url: https://www.cisco.com
-              designation: Software Engineer
-              description:  Developed a web-based network testing tool using Java, JavaScript and WebRTC
-                           - Designed the framework for the Service Assurance Portal using Angular
-                           - Worked on securing web application from external threats
-                           - Involved in creating Jenkins jobs for CICD
-                           - Implemented a Code Review process for all the development and testing done for a product
-                           - Added git-hooks for making the code review process mandatory to make the product more robust and
-                            secure
-              visibility: true
             - company_name: Broadsoft Technologies Pvt. Ltd.
               company_logo: broadsoft.png
               company_url: https://www.broadsoft.com

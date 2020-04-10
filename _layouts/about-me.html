@@ -61,52 +61,36 @@ layout: default
             <h1> Skills </h1>
             {%- include author_skills.html -%}
         </div>
-        {% if site.show_author_project_details == true %}
-        <div id="author_projects" class="card">
-            <h1 class="card-title">Projects</h1>
-            <br />
-            {% for project in site.author_project_details %}
-            {% if project.visibility == true %}
-            <div class="row" id="project-card">
-                <div class="col-md-6">
-                    <img src="{{site.url}}{{site.baseurl}}/assets/img/{{project.project_thumbnail}}"
-                        class="project-img" />
-                </div>
-                <div class="col-md-4 center">
-                    <h4 class="experience-title"> {{ project.project_title }}</h4>
-                    <h6 class="experience-info"> {{ project.project_info}}</h6>
-                    <p class="experience-desc"> {{ project.project_description }} </p>
-                    <p><a class="project-link" href="{{project.project_url}}">{{ project.project_url}}</a></p>
-                </div>
-            </div>
-            {% endif %}
 
-            {% endfor %}
-        </div>
-        {% endif %}
 
-        {% if site.show_author_work_experiences == true %}
         <div class="card">
             <h1 class="card-title"> Work Experience</h1>
             <br />
-            {% for exp in site.author_work_experiences %}
-            {% if exp.visibility == true %}
+
             <div class="row">
                 <div class="col-md-2">
-                    <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ exp.company_logo }}" class="company-logo" />
+                    <img src="/assets/img/cisco.png" class="company-logo" />
                 </div>
-                <div class="col-md-6">
-                    <h4 class="experience-title"> {{ exp.designation }}</h4>
-                    <h6 class="experience-info"><a href="{{exp.company_url}}">{{ exp.company_name}}</a></h6>
-                    <p class="experience-desc"> {{ exp.description }} </p>
-
+                <div class="col-md-8 offset-md-2">
+                    <h4 class="experience-title">Software Engineer</h4>
+                    <h6 class="experience-info"><a href="https://www.cisco.com">Cisco Systems (India) Pvt. Ltd.</a></h6>
+                    <p class="experience-desc">
+                        <ul>
+                            <li>Developed a web-based network testing tool using Java, JavaScript and WebRTC</li>
+                            <li>Designed the framework for the Service Assurance Portal using Angular</li>
+                            <li>Worked on securing web application from external threats</li>
+                            <li>Involved in creating Jenkins jobs for CICD</li>
+                            <li>Implemented a Code Review process for all the development and testing done for a product
+                            </li>
+                            <li>Added git-hooks for making the code review process mandatory to make the product more
+                                robust and secure</li>
+                        </ul>
+                    </p>
                 </div>
             </div>
-            {% endif %}
 
-            {% endfor %}
         </div>
-        {% endif %}
+
 
 
         {% if site.show_author_education_details == true %}
