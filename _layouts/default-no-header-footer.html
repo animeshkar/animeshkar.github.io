@@ -6,11 +6,11 @@ layout: compress
 <html lang="{{ page.lang | default: site.lang | default: " en " }}">
 {%- include head.html -%}
 
-<body>
+<body class="padding-top-0">
     <div class="container-fluid h-100">
-        <div id="bg-particle"></div>
+        <div id="bg-particle" class="h-100 w-100"></div>
         <div class="row h-100">
-            <div class="col-lg-12" class="auto-center">
+            <div class="col-lg-12 customcenter">
                 {{ content }}
             </div>
         </div>
@@ -18,13 +18,16 @@ layout: compress
     <style>
         #bg-particle {
             position: fixed;
-            width: 2000px;
-            height: 1000px;
         }
 
-        .auto-center {
+        .customcenter {
             margin-top: auto;
             margin-bottom: auto;
+        }
+
+        .padding-top-0 {
+            padding-top: 0 !important;
+
         }
     </style>
     <script>
@@ -38,8 +41,8 @@ layout: compress
         nanobar.go( 100 );
 
     </script>
-    <script src="https://unpkg.com/jparticles@2.0.1/production/jparticles.js"></script>
-    <script src="https://unpkg.com/jparticles@2.0.1/production/particle.js"></script>
+    <script src="//unpkg.com/jparticles@2.0.1/production/jparticles.js"></script>
+    <script src="//unpkg.com/jparticles@2.0.1/production/particle.js"></script>
     <script>
         new JParticles.particle( '#bg-particle', {
             proximity: 90,
