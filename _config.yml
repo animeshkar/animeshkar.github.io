@@ -21,13 +21,13 @@ author: Sumit Kar
 author_bio: 
 
 author_education_details:
-              - college_logo: svist.png
+              - college_logo: 
                 college_name: Swami Vivekananda Institute of Science and Technology
                 college_url: https://svist.org
                 college_degree: Computer Science Engineer
                 description: Bachelor of Technology
                 visibility: true
-              - college_logo: akgms.png
+              - college_logo: 
                 college_name: A. K. Ghosh Memorial School
                 college_url: http://akgms.edu.in
                 college_degree: Science
