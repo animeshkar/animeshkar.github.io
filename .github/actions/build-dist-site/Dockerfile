@@ -1,7 +1,7 @@
 # Our Docker image will be based on ruby:2-slim
 # it is a very light docker image.
 FROM ruby:2-slim
-LABEL author="Sujay Kundu"
+LABEL author="Sumit Kar"
 LABEL version="1.0.0"
 
 # Lets install all dependencies
