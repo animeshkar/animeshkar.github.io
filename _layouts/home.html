@@ -1,18 +1,25 @@
 ---
 layout: default-no-header-footer
 ---
-
 <script>
   $( document ).ready( function ()
   {
-    $( '#typewriteText' ).typewrite( {
-      actions: [
-        { type: 'I want to make things that make a difference.' }
-      ]
+    var app = document.getElementById( 'typewriteText' );
+    var typewriter = new Typewriter( app, {
+      loop: false
     } );
+    typewriter.typeString( 'I want to ' )
+      .pauseFor( 500 )
+      .typeString( '<strong>make things </strong>' )
+      .pauseFor( 500 )
+      .typeString( 'that ' )
+      .pauseFor( 500 )
+      .typeString( '<strong>make a difference!</strong>' )
+      .pauseFor( 500 )
+      .start();
   } );
-</script>
 
+</script>
 
 <div class="col-lg-8 offset-md-2">
   <div class="jumbotron" style="text-align: center;">
