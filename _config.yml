@@ -1,0 +1,165 @@
+title: Sumit Kar
+subtitle: Software Engineer at Cisco Systems (India)
+description: >- # this means to ignore newlines until "baseurl:"
+  Software Engineer at Cisco
+
+url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
+baseurl: "" # the subpath of your site, e.g. /blog
+
+urls:
+    - text: About Me
+      url: /about
+    - text: Blog
+      url: /blog
+    - text: Gallery
+      url: /gallery
+    - text: Contact Me
+      url : /contact
+
+# Edit these details
+
+author_logo: profile.png
+author: Sumit Kar
+author_bio: Hello, My Name is Sumit Kar. I love to Code and Design. 
+author_email: "karsumit94[at]live[dot]com"
+author_location: India
+author_website_url: "https://www.sumitkar.in"
+
+author_work_experiences:
+            - company_name: Cisco Systems (India) Pvt. Ltd.
+              company_logo: cisco.png
+              company_url: https://www.cisco.com
+              designation: Software Engineer
+              description:  Developed a web-based network testing tool using Java, JavaScript and WebRTC
+                           - Designed the framework for the Service Assurance Portal using Angular
+                           - Worked on securing web application from external threats
+                           - Involved in creating Jenkins jobs for CICD
+                           - Implemented a Code Review process for all the development and testing done for a product
+                           - Added git-hooks for making the code review process mandatory to make the product more robust and
+                            secure
+              visibility: true
+            - company_name: Broadsoft Technologies Pvt. Ltd.
+              company_logo: broadsoft.png
+              company_url: https://www.broadsoft.com
+              designation: Junior Software Engineer
+              description: 
+              visibility: true
+            - company_name: Novatree eSolutions Pvt. Ltd.
+              company_logo: novatree.png
+              company_url: https://www.novatree.com
+              designation: Software Engineer Intern
+              description: 
+              visibility: true
+
+author_education_details:
+              - college_logo: mit.png
+                college_name: MIT
+                college_url: https://mit.org
+                college_degree: CS Engineer
+                description: Bachelor of Technology
+                visibility: true
+
+author_project_details:
+              - project_thumbnail: gamershub.png
+                project_title: Gamers Hub
+                project_description: A Platform built for Gamers and Game Devs
+                project_url: https://gamershub.in
+                visibility: true
+              - project_thumbnail: hack4r.PNG
+                project_title: Hack4r
+                project_description: A Platform built for Hackers and Penetration Testers
+                project_url: https://hack4r.com
+                visibility: true
+
+# social links
+twitter_username: TimusRak
+github_username:  karsumit94
+facebook_username: www.sumitkar.in  
+linkedin_username: timusrak
+instagram_username: sumitkar.in
+
+
+#for comments using disqus
+disqus_shortname: timus_rak
+
+# formspree (contact form)
+formspree_email: karsumit94@live.com
+
+# syntax highlighter
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# google analytics
+google_analytics: UA-46783401-10
+
+# Choose what to show ( can be true or false)
+show_author_work_experiences: true
+show_author_education_details: true
+show_author_project_details: true
+
+
+# pagination of posts
+paginate: 4
+per_page: 4
+paginate_path: "/blog/page/:num/"
+
+# minify
+# compress_html:
+#   clippings: all
+#   comments: ["<!-- ", " -->"]
+#   endings: all
+#   ignore:
+#     envs: ['development']
+
+# Archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#   layout: archive
+#   permalinks:
+#     category: '/category/:name/'
+
+
+# Gallery
+defaults:
+  -
+    scope:
+      path: "gallery"
+    values:
+      permalink: /:path/:basename:output_ext
+
+# Build settings
+
+theme: devlopr
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-algolia
+  - jekyll-menus
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+destination: ./build
