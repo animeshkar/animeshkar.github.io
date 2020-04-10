@@ -21,20 +21,6 @@ author: Sumit Kar
 author_bio: Hello, My Name is Sumit Kar. I love to Code and Design. 
 
 
-author_work_experiences:
-            - company_name: Broadsoft Technologies Pvt. Ltd.
-              company_logo: broadsoft.png
-              company_url: https://www.broadsoft.com
-              designation: Junior Software Engineer
-              description: 
-              visibility: true
-            - company_name: Novatree eSolutions Pvt. Ltd.
-              company_logo: novatree.png
-              company_url: https://www.novatree.com
-              designation: Software Engineer Intern
-              description: 
-              visibility: true
-
 author_education_details:
               - college_logo: svist.png
                 college_name: Swami Vivekananda Institute of Science and Technology
@@ -45,8 +31,8 @@ author_education_details:
               - college_logo: akgms.png
                 college_name: A. K. Ghosh Memorial School
                 college_url: http://akgms.edu.in
-                college_degree: Computer Science Engineer
-                description: Bachelor of Technology
+                college_degree: Science
+                description: High School
                 visibility: true
 
 
