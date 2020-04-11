@@ -251,6 +251,11 @@ header {
         display: none !important;
     }
 }
+@media (min-width: 1025px){
+    .mobile-only{
+        display: none !important;
+    }
+}
 
 
 #newsletter_footer {

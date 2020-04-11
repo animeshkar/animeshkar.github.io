@@ -114,6 +114,17 @@ layout: default
             {% endfor %}
         </div>
         {% endif %}
+        <div class="card mobile-only">
+            <h1 class="card-title">Recent Posts</h1>
+            <ul>
+                {% for post in site.posts limit:5 %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
 
     </div>
+
 </div>
