@@ -6,21 +6,21 @@ layout: default-no-header-footer
   {
     var app = document.getElementById( 'typewriteText' );
     var typewriter = new Typewriter( app, {
+      strings: true,
       loop: true
     } );
     typewriter
       .pauseFor( 1500 )
       .typeString( 'Technology Enthusiast' )
-      .pauseFor( 1500 )
+      .pauseFor( 500 )
       .deleteAll()
       .typeString( 'Photographer' )
-      .pauseFor( 1500 )
+      .pauseFor( 500 )
       .deleteAll()
       .typeString( 'Foodie' )
-      .pauseFor( 1500 )
+      .pauseFor( 500 )
       .deleteAll()
       .typeString( 'Numismatist' )
-      .pauseFor( 1500 )
       .start();
     const element = document.querySelector( '#sumit-kar' );
     element.classList.add( 'animated', 'fadeInDown' );
